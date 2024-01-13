@@ -15,8 +15,8 @@ const Header = () => {
         </div>
         <div className='navbar-right'>
           <Link href='/'>Home</Link>
-          <Link href="Movie">Movie</Link>
-          <Link href="Contact">Contact Us</Link>
+          <Link href="/Movie">Movie</Link>
+          <Link href="/Contact">Contact Us</Link>
         </div>
       </div>
     </div>
