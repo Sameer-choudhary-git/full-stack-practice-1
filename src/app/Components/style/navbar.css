@@ -1,0 +1,32 @@
+
+.navbar-head {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: darkgrey;
+  }
+  
+  .navbar-right {
+    display: flex;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .navbar-right a {
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: background-image 1s;
+  }
+  .navbar-right a:hover {
+    background-image: linear-gradient(to right,#AA336A,transparent);
+  }
+
+  .hero-main{
+    display: flex;
+    justify-content: space-between;
+  }
