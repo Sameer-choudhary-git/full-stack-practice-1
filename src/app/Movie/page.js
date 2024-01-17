@@ -6,8 +6,7 @@ import { resolve } from 'styled-jsx/css';
 
 const Movie = async () => {
 
-  const url = process.env.RAPID_KEY;
-  const options = {
+    const url = 'https://netflix54.p.rapidapi.com/search/?query=stranger&offset=0&limit_titles=50&limit_suggestions=20&lang=en';  const options = {
     method: 'GET',
     headers: {
       'X-RapidAPI-Key': '47f0312259msh2669770bdfa8e9ep14fbd8jsn2d1816b858c6',
