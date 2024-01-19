@@ -15,9 +15,22 @@ const ContactForm = () => {
         const value =e.target.value;
         setuser({...user,[name]:value});
     }
-    const handleSubmit = (e)=>{
+    const handleSubmit = async (e)=>{
         e.preventDefault();
-        console.log(user);
+        try {
+            const response = await fetch('/api/Contact',{
+                method:'POST',
+                headers:{"Contact_type":"application/json"},
+                body: JSON.stringify({
+                    username:user.username,
+                    email:user.email,
+                    phone:user.phone,
+                    message:user.message,
+                })
+            })
+        } catch (error) {
+            console.log(error)
+        }
     }
 
   return (
