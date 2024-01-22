@@ -1,0 +1,125 @@
+/* Import the Nunito font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+/* Define the Nunito font as a variable */
+
+/* Define the mixins */
+@keyframes floating {
+    from { transform: translateY(0px); }
+    65%  { transform: translateY(15px); }
+    to   { transform: translateY(-0px); }
+}
+
+/* Apply styles to HTML and body elements */
+
+
+.full {
+  background-image: url('https://assets.codepen.io/1538474/star.svg'),linear-gradient(to bottom, #05007A, #4D007D);
+  height: 100%;
+  margin: 0;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* Apply styles to the .mars class */
+.mars {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 27vmin;
+  background: url('https://assets.codepen.io/1538474/mars.svg') no-repeat bottom center;
+  background-size: cover;
+}
+
+/* Apply styles to the .logo-404 class */
+.logo_404 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 16vmin;
+  width: 30vmin;
+}
+
+/* Apply styles to the .meteor class */
+.meteor {
+  position: absolute;
+  right: 2vmin;
+  top: 16vmin;
+}
+
+/* Apply styles to the .title class */
+.title {
+  color: white;
+  font-family: var(--nunito-font);
+  font-weight: 600;
+  text-align: center;
+  font-size: 5vmin;
+  margin-top: 31vmin;
+}
+
+/* Apply styles to the .subtitle class */
+.subtitle {
+  color: white;
+  font-family: var(--nunito-font);
+  font-weight: 400;
+  text-align: center;
+  font-size: 3.5vmin;
+  margin-top: -1vmin;
+  margin-bottom: 9vmin;
+}
+
+/* Apply styles to the .btn-back class */
+.btn_back {
+  border: 1px solid white;
+  color: white;
+  height: 5vmin;
+  padding: 12px;
+  font-family: var(--nunito-font);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn_back:hover {
+  background: white;
+  color: #4D007D;
+}
+
+/* Apply responsive styles to the .btn-back class */
+@media (max-width: 480px) and (min-width: 320px) {
+  .btn_back {
+    font-size: 3.5vmin;
+  }
+}
+
+/* Apply styles to the .astronaut class */
+.astronaut {
+  position: absolute;
+  top: 18vmin;
+  left: 10vmin;
+  height: 30vmin;
+  animation: floating 3s infinite ease-in-out;
+}
+
+/* Apply responsive styles to the .astronaut class */
+@media (max-width: 480px) and (min-width: 320px) {
+  .astronaut {
+    top: 2vmin;
+  }
+}
+
+/* Apply styles to the .spaceship class */
+.spaceship {
+  position: absolute;
+  bottom: 15vmin;
+  right: 24vmin;
+}
+
+/* Apply responsive styles to the .spaceship class */
+@media (max-width: 480px) and (min-width: 320px) {
+  .spaceship {
+    width: 45vmin;
+    bottom: 18vmin;
+  }
+}

@@ -36,8 +36,8 @@
 
 .card_section {
     width: 100%;
-    display: flex;
-    gap: 4.8rem;
+    /* display: flex;
+    gap: 1.8rem; */
     justify-content: space-between;
     align-items: center;
     /*background-color: #90caf9;*/
@@ -187,4 +187,33 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bgLogoImage {
+    position: relative;
+    bottom: 60px;
+    width:515px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
+  }
+  
 
